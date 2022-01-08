@@ -42,9 +42,9 @@ def get_stats_data(img_path, trimming_pattern):
 
   #OCR前の画像処理
   #1.トリミング
-  if trimming_pattern == "2021_attack":
+  if trimming_pattern == "2021_attack":     # 2021_個人スタッツ-攻撃_の画像データ用
     img = img_origin[80 : 460 , 632 : 673]
-  elif trimming_pattern == "2021_defense":
+  elif trimming_pattern == "2021_defense":  # 2021_個人スタッツ-守備_の画像データ用
     img = img_origin[80 : 416 , 300 : 340]
   else:
     img = img
